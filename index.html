@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Sinh Nhật Ánh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              handwriting: ['Dancing Script', 'cursive'],
+            },
+            colors: {
+              'pastel-pink': '#FFD1DC',
+              'pastel-blue': '#AEC6CF',
+              'pastel-yellow': '#FDFD96',
+              'deep-pink': '#FF69B4',
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'wiggle': 'wiggle 1s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFD1DC; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF69B4; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-pink-50 text-gray-800 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
